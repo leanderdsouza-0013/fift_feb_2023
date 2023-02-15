@@ -1,0 +1,52 @@
+public class num{
+/**
+* @author - Leander Dsouza
+* @param a - Accepts first integer
+* @param b - Accepts second integer
+* @return - Final answers
+*/
+
+public int multiply(int a, int b){
+return a*b;
+}
+public int add(int a, int b){
+return a+b;
+}
+public int divide(int a, int b){
+return a/b;
+}
+}
+-----------------------------------------------------------
+class numTest{
+@Test
+void test(){
+//fail("not yet implemented");
+}
+
+@Test
+void MultiTest(){
+num obj1 = new num();
+int expected = 4;
+int actual = obj1.multiply(2,2);
+assertEquals(expected, actual);
+}
+
+@Test
+@Disabled
+Void AddTest(){
+num obj2 = new num();
+int expected = 4;
+int actual = obj1.add(2,2);
+assertEquals(expected, actual);
+}
+
+@Test
+@DisplayName("Division Test")
+void DiviTest(){
+num obj3 = new num();
+int expected = 1;
+int actual = obj3.divide(2,2);
+assertEquals(expected, actual);
+}
+}
+--------------------------------------------------------
